@@ -98,7 +98,6 @@ html {
 /* * //////// Main Section//////// */
 
 .main {
-  /* background-color: red; */
   margin-top: 1rem;
 }
 
@@ -122,7 +121,6 @@ html {
 
 .main-inputBox {
   position: relative;
-  /* background-color: red; */
 }
 .main-input {
   padding: 1rem;
@@ -147,7 +145,7 @@ html {
   width: 2rem;
   height: 2rem;
   position: absolute;
-  top: 0.5rem;
+  top: 1rem;
   right: 10rem;
   fill: var(--dark);
 }
@@ -178,14 +176,63 @@ html {
   text-align: center;
   transition: all 140ms ease-in;
 }
-.main-cities__list-item:hover{
-    transform: scale(1.2);
-    font-weight: 600;
+.main-cities__list-item:hover {
+  transform: scale(1.2);
+  font-weight: 600;
 }
-
 
 .main-cities__list-item-link {
   font-size: 1.1rem;
   color: var(--dark);
   font-family: "iranSans-regular", Courier, monospace;
+}
+
+/* * //////// Footer Section//////// */
+.footer {
+  margin-top: 8rem;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  border-top: 10px solid;
+  border-image-source: url("../icons/waveBorder.svg");
+  border-image-slice: 30;
+  padding-top: 1rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  width: 30rem;
+  border-top: 10px solid;
+  border-image-source: url("../icons/waveBorder.svg");
+  border-image-slice: 30;
+  padding-top: 2rem;
+}
+.footer-bottom a svg {
+  width: 2rem;
+  height: 2rem;
+  transition: all 140ms ease-in;
+}
+.footer-bottom a svg:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom-telegram-svg {
+  fill: var(--azure);
+}
+
+.footer-bottom-linkedin-svg {
+  fill: var(--crystalBlue);
+}
+
+.footer-bottom-x-svg {
+  fill: var(--dark);
+}
+
+.footer-bottom-instagram-svg {
+  fill: var(--rubyRed);
 }
