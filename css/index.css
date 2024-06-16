@@ -17,14 +17,11 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  /* background-color: red; */
-  /* height: 100%; */
 }
 
 .main-container {
   max-width: 920px;
   margin: 0 auto;
-  /* background-color: red; */
 }
 .svg-sprite {
   display: none;
@@ -52,10 +49,7 @@ html {
 }
 
 .navbar {
-  width: 50rem;
-  margin: 0 auto;
   margin-top: 2rem;
-  /* border-bottom: 2px solid var(--dark); */
   padding-bottom: 1rem;
   border-bottom: 10px solid;
   border-image-source: url("../icons/waveBorder.svg");
@@ -120,34 +114,54 @@ html {
 }
 
 .main-inputBox {
-  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.main-inputBox-btn {
+  width: 20%;
+  border: none;
+  height: 4rem;
+  font-size: 1.2rem;
+  background-color: var(--dark);
+  color: var(--white);
+  cursor: pointer;
+  font-family: "iranSans-bold", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.main-inputBox-btn:hover .main-input-icon {
+  transform: scale(1.2);
+}
+.main-input-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--white);
+  transition: all 140ms ease-in;
 }
 .main-input {
+  width: 80%;
+  height: 4rem;
   padding: 1rem;
   display: block;
   margin: 0 auto;
-  margin-top: 1rem;
-  width: 40rem;
-  padding-right: 4rem;
   border: none;
   outline: none;
   font-size: 1.2rem;
   font-family: "iranSans-regular", Courier, monospace;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 .main-input::placeholder {
   font-size: 1.2rem;
   font-family: "iranSans-regular", Courier, monospace;
-}
-
-.main-input-icon {
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-  top: 1rem;
-  right: 10rem;
-  fill: var(--dark);
 }
 
 .main-cities__title {
@@ -202,6 +216,7 @@ html {
 
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 2rem;
