@@ -266,33 +266,34 @@
         <ul class="aside-menu__list">
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              املاک
               <svg class="aside-menu__list-icon">
                 <use href="#house-icon"></use>
               </svg>
-              املاک
             </a>
           </li>
 
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              وسایل نقلیه
               <svg class="aside-menu__list-icon">
                 <use href="#car-icon"></use>
               </svg>
-              وسایل نقلیه
             </a>
           </li>
 
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              کالای دیجیتال
               <svg class="aside-menu__list-icon">
                 <use href="#mobile-icon"></use>
               </svg>
-              کالای دیجیتال
             </a>
           </li>
 
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              خانه و آشپزخانه
               <svg class="aside-menu__list-icon">
                 <use href="#kitchen-icon"></use>
               </svg>
@@ -301,6 +302,7 @@
 
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              خدمات
               <svg class="aside-menu__list-icon">
                 <use href="#work-icon"></use>
               </svg>
@@ -309,6 +311,7 @@
 
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              وسایل شخصی
               <svg class="aside-menu__list-icon">
                 <use href="#user-icon"></use>
               </svg>
@@ -317,6 +320,7 @@
 
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              سرگرمی و فراغت
               <svg class="aside-menu__list-icon">
                 <use href="#entertainment-icon"></use>
               </svg>
@@ -325,6 +329,7 @@
 
           <li class="aside-menu__list-item">
             <a href="#" class="aside-menu__list-link">
+              اجتماعی
               <svg class="aside-menu__list-icon">
                 <use href="#social-icon"></use>
               </svg>
@@ -333,8 +338,13 @@
         </ul>
         <!-- ! Aside Menu Price -->
         <div class="aside-menu__price">
-          <button class="aside-menu__price-btn">قیمت</button>
-          <div class="aside-menu__price-selects">
+          <button class="aside-menu__price-btn accordion">
+            قیمت
+            <svg class="aside-menu__price-btn-icon">
+              <use href="#chevronDown-icon"></use>
+            </svg>
+          </button>
+          <div class="aside-menu__price-selects panel">
             <select class="aside-menu__price-selects-min">
               <option value="default">مبلغ پیش فرض</option>
               <option value="10000">10 هزار تومان</option>
@@ -361,7 +371,7 @@
 
         <!-- ! Aside Menu PhotoStatus -->
         <div class="aside-menu__photoStatus">
-          <input type="text" class="aside-menu__photoStatus-input" />
+          <input type="checkbox" class="aside-menu__photoStatus-input" />
           <span class="aside-menu__photoStatus-title"> فقط عکس دار </span>
         </div>
 
@@ -383,7 +393,7 @@
 
           <a href="#" class="aside-menu__socials-x">
             <svg class="aside-menu__socials-x-icon">
-              <use href="x-icon"></use>
+              <use href="#x-icon"></use>
             </svg>
           </a>
 
@@ -418,9 +428,13 @@
             class="aside-menu__credentials-image"
           />
         </div>
+
+        
       </aside>
 
-      <section class="main-ads"></section>
+      <section class="main-ads">a</section>
     </main>
+
+    <script src="./js/home.js"></script>
   </body>
 </html>
