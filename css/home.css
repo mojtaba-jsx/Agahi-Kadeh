@@ -68,6 +68,10 @@
   margin-right: 0.4rem;
   fill: var(--white);
 }
+.navbar__right span:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 
 .navbar__right-citySelect,
 .navbar__right__category {
@@ -77,6 +81,10 @@
   font-size: 1rem;
   font-family: "iranSans-bold", Courier, monospace;
   color: var(--white);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 140ms ease-in;
+  cursor: pointer;
 }
 
 .navbar__right__search {
