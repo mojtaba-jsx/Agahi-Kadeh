@@ -1,0 +1,67 @@
+/* *======== Css Variables======== */
+:root {
+  --crystalBlue: #3abef9;
+  --white: #ffffff;
+  --dark: #222831;
+  --gray: #eeeeee;
+  --brightTeal: #15f5ba;
+  --rubyRed: #f32424;
+  --azure: #109ce8;
+}
+
+/* * //////// Footer Section//////// */
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.footer-right__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.footer-right__link-image {
+  width: 4rem;
+  height: 4rem;
+}
+.footer-right__link {
+  color: var(--dark);
+  font-family: "iranSans-light", Courier, monospace;
+}
+
+.footer-right__item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footer-left__instagram-icon,
+.footer-left__telegram-icon,
+.footer-left__x-icon,
+.footer-left__linkedin-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.footer-left__instagram-icon {
+  fill: var(--rubyRed);
+}
+.footer-left__telegram-icon {
+  fill: var(--azure);
+}
+.footer-left__linkedin-icon {
+  fill: var(--crystalBlue);
+}
+
+.footer-left a {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.footer-left a svg {
+  transition: all 140ms ease-in;
+}
+.footer-left a svg:hover {
+  transform: scale(1.2);
+}
