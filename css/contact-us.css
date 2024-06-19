@@ -1,0 +1,29 @@
+/* * ========Imports======== */
+@import "./reset.css";
+@import "./fonts.css";
+@import "./header.css";
+
+/* *======== Css Variables======== */
+:root {
+  --crystalBlue: #3abef9;
+  --white: #ffffff;
+  --dark: #222831;
+  --gray: #b5c0d0;
+  --brightTeal: #15f5ba;
+  --rubyRed: #f32424;
+  --azure: #109ce8;
+}
+
+/* * Default Classes */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main-container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.svg-sprite {
+  display: none;
+}
