@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- * ========Styles======== -->
     <link rel="stylesheet" href="./css/about-us.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <title>درباره ما</title>
   </head>
   <body>
@@ -339,7 +345,9 @@
             <div class="main-business__boxes">
               <div class="main-business__boxes__right">
                 <span class="main-business__boxes__right-icon">
-                  <svg class="main-business__boxes__right-icon-svg"><use href="#ad-icon"></use></svg>
+                  <svg class="main-business__boxes__right-icon-svg">
+                    <use href="#ad-icon"></use>
+                  </svg>
                 </span>
                 <span class="main-business__boxes__right-title"> کارنامه </span>
                 <p class="main-business__boxes__right-text">
@@ -351,7 +359,9 @@
 
               <div class="main-business__boxes__left">
                 <span class="main-business__boxes__left-icon">
-                  <svg class="main-business__boxes__left-icon-svg"><use href="#user-icon"></use></svg>
+                  <svg class="main-business__boxes__left-icon-svg">
+                    <use href="#user-icon"></use>
+                  </svg>
                 </span>
                 <span class="main-business__boxes__left-title"> کارنامه </span>
                 <p class="main-business__boxes__left-text">
@@ -403,11 +413,73 @@
               مراجعان حضوری را نداریم.
             </span>
             <div class="main-contact__map">
-                <div class="#map"></div>
+              <div id="map"></div>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- * ==========================Footer Section========================== -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer-right">
+          <ul class="footer-right__list">
+            <li class="footer-right__item">
+              <a href="#" class="footer-right__link">
+                <img
+                  src="./images/logo/MainLogo.jpeg"
+                  alt="logo"
+                  class="footer-right__link-image"
+                />
+              </a>
+            </li>
+
+            <li class="footer-right__item">
+              <a href="#" class="footer-right__link"> درباره آگهی کده </a>
+            </li>
+
+            <li class="footer-right__item">
+              <a href="#" class="footer-right__link"> پشتیبانی و قوانین </a>
+            </li>
+
+            <li class="footer-right__item">
+              <a href="#" class="footer-right__link"> بلاگ آگهی کده </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-left">
+          <a href="#" class="footer-left__instagram">
+            <svg class="footer-left__instagram-icon">
+              <use href="#instagram-icon"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer-left__telegram">
+            <svg class="footer-left__telegram-icon">
+              <use href="#telegram-icon"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="footer-left__x">
+            <svg class="footer-left__x-icon"><use href="#x-icon"></use></svg>
+          </a>
+
+          <a href="#" class="footer-left__linkedin">
+            <svg class="footer-left__linkedin-icon">
+              <use href="#linkedin-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./js/about-us.js"></script>
   </body>
 </html>

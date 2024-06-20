@@ -89,7 +89,9 @@
 }
 
 /* * //////// Main Section//////// */
-
+.main{
+  margin-bottom: 4rem;
+}
 .main-about {
   display: flex;
   justify-content: space-around;
@@ -269,4 +271,21 @@
   font-family: "iranSans-light", Courier, monospace;
   color: var(--gray);
   margin-top: 1rem;
+}
+
+.main-contact__map {
+  width: 40rem;
+  height: 20rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  /* background-color: red; */
+}
+#map{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.footer__wrapper{
+  flex-direction: row;
 }
